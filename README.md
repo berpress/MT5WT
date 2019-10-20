@@ -1,4 +1,2 @@
 # MT5WT
-test
-test2
-test32
+https://travis-ci.org/berpress/MT5WT.svg?branch=master
