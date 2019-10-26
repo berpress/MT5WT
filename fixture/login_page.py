@@ -9,3 +9,6 @@ class LoginPage:
 
     def open(self):
         self.app.wd.get(self.app.base_url)
+
+    def authorization(self, login, password):
+        pass
