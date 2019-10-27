@@ -3,9 +3,6 @@ from webdriver_manager.chrome import ChromeDriverManager
 from fixture.login_page import LoginPage
 
 
-
-
-
 class Application:
     def __init__(self, base_url):
         self.wd = webdriver.Chrome(ChromeDriverManager().install())
