@@ -1,6 +1,6 @@
+from fixture.login_page import LoginPage
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
-from fixture.login_page import LoginPage
 
 
 class Application:
