@@ -13,5 +13,8 @@ def app(request):
 
 def pytest_addoption(parser):
     parser.addoption(
-        "--base_url", action="store", default="https://trade.mql5.com/trade", help="base_url"
+        "--base_url",
+        action="store",
+        default="https://trade.mql5.com/trade",
+        help="base_url",
     )
