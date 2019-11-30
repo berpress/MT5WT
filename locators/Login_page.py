@@ -8,4 +8,5 @@ class Authorization:
     SERVER_INPUT = (By.ID, "server")
     MT4_PLATFORM = (By.ID, "mt4-platform")
     MT5_PLATFORM = (By.ID, "mt5-platform")
-    BUTTON = (By.CLASS_NAME, "input-button")
+    BTN_LOGIN = (By.XPATH, "//button[@class='input-button' and  text()='OK']")
+    TOTAL_FIELD = (By.ID, "total")
