@@ -1,4 +1,5 @@
-from locators.Login_page import Authorization
+from locators.login_page import Authorization
+from fixture._base import log
 
 
 class LoginPage:
@@ -6,9 +7,11 @@ class LoginPage:
         self.app = app
 
     def open(self):
+        log.info(f"Open {self.app.base_url}")
         self.app.wd.get(self.app.base_url)
 
     def auth_terminal(self, login, password, mt5_platform=True):
+        log.info(f"Auth in terminal, login = {login}, password = {password}")
         if mt5_platform:
             self.select_mt5_platform().click()
         self.password_input().send_keys(password)
