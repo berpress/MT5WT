@@ -8,7 +8,7 @@ class LoginPage:
     def open(self):
         self.app.wd.get(self.app.base_url)
 
-    def auth(self, login, password, mt5_platform=True):
+    def auth_terminal(self, login, password, mt5_platform=True):
         if mt5_platform:
             self.select_mt5_platform().click()
         self.password_input().send_keys(password)
