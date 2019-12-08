@@ -4,7 +4,10 @@
 ## Autotests at selenium and python for WebTerminal МТ5 (https://trade.mql5.com/trade)
 
 How to use:
-1. git clone git@github.com:berpress/MT5WT.git
+1. Copy project
+```
+git clone git@github.com:berpress/MT5WT.git
+```
 2. install poetry 
     poetry - https://poetry.eustace.io/
 
