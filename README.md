@@ -4,4 +4,4 @@
 poetry - https://poetry.eustace.io/
 
 1. Установка пакетов - poetry install
-2. Добавление пакета - poetry add xxxx
+2. Добавление пакета - poetry add <package>
