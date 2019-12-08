@@ -1,4 +1,6 @@
 import pytest
+
+from common.common import NETTING_ACCOUNT
 from fixture.application import Application
 
 
@@ -19,3 +21,10 @@ def pytest_addoption(parser):
         default="https://trade.mql5.com/trade",
         help="base_url",
     )
+
+
+@pytest.fixture()
+def auth_netting(app):
+    if not app.auth.is_auth(NETTING_ACCOUNT.login):
+        app.auth.open()
+        app.auth.auth_terminal(NETTING_ACCOUNT.login, NETTING_ACCOUNT.password)

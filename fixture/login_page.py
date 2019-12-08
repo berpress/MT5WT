@@ -1,3 +1,5 @@
+from selenium.common.exceptions import NoSuchElementException
+
 from locators.login_page import Authorization
 from fixture._base import log
 
@@ -32,3 +34,13 @@ class LoginPage:
 
     def total_field(self):
         return self.app.wd.find_element(*Authorization.TOTAL_FIELD)
+
+    def account_info(self):
+        return self.app.wd.find_element(*Authorization.ACCOUNT_INFO)
+
+    def is_auth(self, username):
+        try:
+            if username in self.account_info().text():
+                return True
+        except NoSuchElementException:
+            return False

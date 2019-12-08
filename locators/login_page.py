@@ -10,3 +10,4 @@ class Authorization:
     MT5_PLATFORM = (By.ID, "mt5-platform")
     BTN_LOGIN = (By.XPATH, "//button[@class='input-button' and  text()='OK']")
     TOTAL_FIELD = (By.ID, "total")
+    ACCOUNT_INFO = (By.CLASS_NAME, "page-text account")
