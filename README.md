@@ -8,8 +8,9 @@ How to use:
 ```
 git clone git@github.com:berpress/MT5WT.git
 ```
-2. install poetry 
+2. Install poetry 
     poetry - https://poetry.eustace.io/
-
-    1. Установка пакетов - poetry install
-    2. Добавление пакета - poetry add <package>
+    
+    How to use poetry:
+    1. Install packeges - poetry install
+    2. Add package - poetry add <package>
