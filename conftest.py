@@ -1,5 +1,4 @@
 import pytest
-
 from common.common import NETTING_ACCOUNT
 from fixture.application import Application
 
